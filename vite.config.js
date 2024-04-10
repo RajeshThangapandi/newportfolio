@@ -19,12 +19,13 @@ export default defineConfig({
         rewrite: path => path.replace(/^\/api/, '')
       }
     },
+    strictMIME: false,
     cors: {
        origin: 'https://rajeshthangapandi.github.io', // Allow requests from any origin
         methods: 'GET, POST, PUT, DELETE', // Allow specified HTTP methods
         allowedHeaders: '*', // Allow any headers
         exposedHeaders: '', // Expose no additional headers
-        credentials: false, // Allow credentials (cookies, etc.)
+        credentials: true, // Allow credentials (cookies, etc.)
         maxAge: 3600, // Cache preflight requests for 1 hour (optional)
         preflightContinue: false, // Disable preflight requests (optional)
         optionsSuccessStatus: 204 // Set the status code for successful OPTIONS requests (optional)
