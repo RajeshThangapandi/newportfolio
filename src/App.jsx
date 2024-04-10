@@ -3,6 +3,8 @@ import React, { useEffect, useState } from "react";
 import { About, Contact, Experience, Hero, Navbar, Tech, Works, StarsCanvas } from "./components";
 
 
+
+
 const App = () => {
 
   const [scrolled, setScrolled] = useState(false);
